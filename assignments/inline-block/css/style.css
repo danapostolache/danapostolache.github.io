@@ -1,0 +1,18 @@
+.inline {
+  display:inline;
+  outline:solid 3px blue;
+}
+.block {
+  display:block;
+  outline:solid 3px blue;
+}
+
+.inline-block {
+  display:inline-block;
+  outline:solid 3px blue;
+}
+
+.inline-wrapper {
+  border:solid 5px red;
+}
+
