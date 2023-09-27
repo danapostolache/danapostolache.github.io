@@ -15,29 +15,34 @@
     <img class="logo" src="./img/logo.png" title=" Parents from Haarlemmwerkwartier" alt="logo">
     
     <!--Header-->
-    <header class="headerHomepage">
-        <h1 class="titleHomepage">Parents from Haarlemmerhoutkwartier</h1>
+    <header class="headerHomepageFlex">
+        <h1 class="titleHomepage titleFont">Parents from Haarlemmerhoutkwartier</h1>
     </header>
     
     <!--Navigation-->
-    <nav class="navHomepage">
-        <input class="hamburgerMenu" type="checkbox" id="hamburgerMenu">
-        <ul class="navList">
-            <li class="navItem"><a class="navLink" href="index.html">Home</a></li>
-            <li class="navItem"><a class="navLink" href="detailPage1.html">Neighbourhood</a></li>
-            <li class="navItem"><a class="navLink" href="detailPage2.html">Education</a></li>
-            <li class="navItem"><a class="navLink" href="detailPage3.html">Activities</a></li>
-            <li class="navItem"><a class="navLink" href="detailPage4.html">Health</a></li>
-            <li class="navItem"><a class="navLink" href="contact.html">Contact us</a></li>
+    <nav class="navHomepageFlex">
+        <input class="hamburgerMenu" type="checkbox">
+        <ul class="navListHamburgerMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="detailPage1.html">Neighbourhood</a></li>
+            <li><a href="detailPage2.html">Education</a></li>
+            <li><a href="detailPage3.html">Activities</a></li>
+            <li><a href="detailPage4.html">Health</a></li>
+            <li><a href="contact.html">Contact us</a></li>
         </ul>
-        <figure class="thisHamburgerMenu">
-            <span class="this is the first line"></span>
-            <span class="this is the seonds line"></span>
-            <span class="this is the third line"></span>
-        </figure>
 
-        <!-- Here will be a Video-->
-        <figure id="videoHomepage">
+        <figure class="thisHamburgerMenuMobile">
+            <span class="this is line 1"></span>
+            <span class="this is line 2"></span>
+            <span class="this is line 3"></span>
+            <span class="this is line 4"></span>
+            <span class="this is line 5"></span>
+            <span class="this is line 6"></span>
+        </figure>
+    </nav>
+
+        <!-- Videos-->
+        <figure id="videoHomepageFlex">
 
             <!--Video-PC-->
             <video id="videoForPC">
@@ -47,18 +52,25 @@
             </video>
 
             <!--Video-Tablet-->
-            
+            <video id="videoForTablet">
+                <source src="./media/Haarlem-mobile.mp4" type="video/mp4">
+                <source src="./media/Haarlem-mobile.webm" type="video/webm">
+                Oops&#33; Your browser does not support the video tag.
+            </video>
         </figure>
 
-        <section id="articlesForHomepage">
-            <h2 class="h2ForSection">Articles</h2>
+        <section id="articlesHomepageFlex">
+            <h2 class="headerArticles">Homepage</h2>
+
+            <section id="articlesHomepage">
+            <h2 class="headerArticles">Articles</h2>
 
             <!--1st Article-->
             <article id="article1">
                 <header>
                     <h2>Neighbourhood</h2>
                 </header>
-                <figure class="figureForArticle1">
+                <figure class="figureForArticle">
                     <a href="detailPage1.html" target="_blank">
                         <img src="./img/Neighbourhood.jpg" alt="Neighbourhood" title="Neighbourhood"></a>
 
@@ -73,11 +85,11 @@
                     Haarlemmerhout, a park in the neighbourhood. The neighbourhood is a residential area with a lot of greenery. 
                     The neighbourhood is also home to the Haarlemmerhout, a park in the neighbourhood.</p>
 
-                    <p class="moreInfoArticle1">
+                    <p class="moreInfoArticle">
                         <a href="detailPage1.html" target="_blank">Read more</a>
                     </p>
                     
-                    <footer class="footerForArticle1">
+                    <footer class="footerForArticle">
                         Copyright &copy; Dana Postolache &#40;Posted on: 20.05.2020&#41;
                     </footer>
             </article>
@@ -88,7 +100,7 @@
                     <h2>Education</h2>
                 </hearder>
                 
-                <figure class="figureForArticle2">
+                <figure class="figureForArticle">
                     <a href="detailPage2.html" target="_blank">
                         <img src="./img/Education.jpg" alt="Education" title="Education"></a>
 
@@ -104,11 +116,11 @@
                     is also promoted, using the natural beauty of Haarlemmerhout park to teach sustainability and conservation, making 
                     education an integral part of this serene neighborhood.</p>
 
-                    <p class="moreInfoArticle2">
+                    <p class="moreInfoArticle">
                         <a href="detailPage2.html" target="_blank">Read more</a>
                     </p>
 
-                    <footer class="footerForArticle2">
+                    <footer class="footerForArticle">
                         Copyrigth &copy; Dana Postolache &#40;Posted on: 20.05.2020&#41;
                     </footer>
             </article>
@@ -119,7 +131,7 @@
                     <h2>Activities</h2>
                 </header>
 
-                <figure class="figureForArticle2">
+                <figure class="figureForArticle">
                     <a href="detailPage3.html" target="_blank">
                         <img src="./img/Activities.jpg" alt="Activities" title="Activities"></a>
 
@@ -135,11 +147,11 @@
                     Whether you seek relaxation in nature or cultural exploration, Haarlemmerhoutkwartier has something 
                     for everyone to enjoy.</p>
 
-                    <p class="moreInfoArticle3">
+                    <p class="moreInfoArticle">
                         <a href="detailPage3.html" target="_blank">Read more</a>
                     </p>
 
-                    <footer class="footerForArticle3">
+                    <footer class="footerForArticle">
                         Copyright &copy; Dana Postolache &#40;Posted on: 20.05.2020&#41;
                     </footer>
             </article>
@@ -150,7 +162,7 @@
                     <h2>Health</h2>
                 </header>
 
-                <figure class="figureForArticle4">
+                <figure class="figureForArticle">
                     <a href="detailPage4.html" target="_blank">
                         <img src="./img/Health.jpg" alt="Health" title="Health"></a>
 
@@ -168,32 +180,40 @@
                     quality healthcare, Haarlemmerhoutkwartier prioritizes the health and vitality of its residents.
                 </p>
 
-                 <p class="moreInfoArticle4">
+                 <p class="moreInfoArticle">
                         <a href="detailPage4.html" target="_blank">Read more</a>
                     </p>
 
-                    <footer class="footerForArticle4">
+                    <footer class="footerForArticle">
                         Copyright &copy; Dana Postolache &#40;Posted on: 20.05.2020&#41;
                     </footer>
             </article>
         </section>
+     </section>
 
         <!--Sidebox-->
-        <aside id="asideHomepage">
-            <h3 id="h3AsideHomepage">Why should I choose Haarlemmerhoutkwartier?    &#40;FAQ&#41;
+        <aside id="asideHomepageFlex">
+            <h3 id="AsideHomepage">Why should I choose Haarlemmerhoutkwartier?    &#40;FAQ&#41; </h3>
                 <ol>
                     <li>Tranquil Lifestyle: Haarlemmerhoutkwartier offers a peaceful and serene residential environment, perfect for a relaxed lifestyle.</li>
                     <li>Abundant Greenery: The neighborhood is surrounded by lush green spaces and parks, promoting a healthy and nature-centric way of living.</li>
                     <li>Educational Opportunities: It boasts a range of quality educational institutions, ensuring excellent learning options for families.</li>
                     <li>Cultural Engagement: With art exhibitions, community centers, and proximity to Haarlem's city center, there's always something culturally enriching to do.</li>
                     <li>Health and Well-being: Haarlemmerhoutkwartier prioritizes health with easy access to outdoor activities, healthcare facilities, and a focus on sustainable living.</li>
-                    
                 </ol>
-
-            </h3>
         </aside>
 
-       
-        
+        <footer class="footer">
+
+            <!--Copyright-->
+            <cite>
+                <em>&copy; 2023 Dana Postolache</em>
+            </cite>
+
+            <!--Cookie-->
+            <section class="cookie">
+                <h3>Cookie Statement</h3>
+            </section>
+        </footer>
 </body>
 </html>

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
 
+
+*,
+*::after,
+*::before {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 .logo{
     margin: auto;
     width: 50%;
@@ -17,3 +27,393 @@
 body{
     font-family:"Arial", "Helvetica", "sans-serif";
 }
+
+.headerArticles{
+    display: none;
+}
+
+#asideHomepageFlex + footer
+ {
+    font-size: 1.1em;
+}
+
+.cookie {
+    flex: 0 1 auto;
+    margin-left: auto;
+    margin-top: 10px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #FFF;
+    background-color: #FA0;
+    opacity: 50%;
+    padding: 6px;
+    width: 200px;
+    text-align: center;
+    position: fixed;
+    z-index: 9999;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    letter-spacing: normal;
+    line-height: normal;
+    text-indent: 0px;
+    word-spacing: normal;
+}
+
+.footer cite {
+    float: left;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+footer {
+    flex-basis: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.footerForArticle footer {
+    margin-top: 10px;
+}
+
+ /* ------- PC -------*/
+ @media screen and (min-width: 1280px) {
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .cookie
+    {
+        margin-right: 10px;
+    }
+
+    /* -------- Homepage  -------- */
+
+    .bodyParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .titleHomepage {
+        text-align: center;
+    }
+
+    .navHomepageFlex {
+        flex: 1 0 100%;
+        font-size: 1.5em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navHomepageFlex > ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background: #EBD3C0;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    .navHomepageFlex li {
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    .navHomepageFlex a {
+        text-decoration: solid;
+        font-size: 1.3em; 
+        color: #486D8F;
+    }
+
+    .navHomepageFlex a:hover {
+        color:#FFF0DE;
+    }
+   
+    .navHomepageFlex a:active {
+        color: #486D8F;
+    }
+    
+    .navHomepageFlex {
+        flex: 1 0 100%;
+        font-size: 1.2em;
+    }
+
+    
+    #videoHomepageFlex{
+        flex: 0 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #EBD3C0;
+        border-left: #486D8F 4px solid;
+        border-top: #486D8F 4px solid;
+        border-right:#486D8F 4px solid;
+    }
+    
+    #videoForPC {
+        width: 60%;
+        border-width: 5px;
+        border-radius: 1px;
+        border-style: solid;
+        border-color: #486D8F;
+    }
+
+    #videoForTablet {
+        display: none;
+    }
+
+    #articlesHomepageFlex
+    {
+        flex: 1 0 0px;
+        border-right: 3px solid #000;
+        margin-left: 20px;
+    }
+
+    article {
+        padding: 10px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin: 15px;
+    }
+    
+    #articlesHomepage {
+        display: flex;
+        background-color: #EBD3C0;
+        flex-direction: column;
+        border-bottom-left-radius: 10px;
+        border-left: #486D8F 4px solid;
+        border-bottom: #486D8F 4px solid;
+    }
+
+    #article1,
+    #article2,
+    #article3 {
+        font-size: 1.1em;
+        border-bottom: 4px solid #486D8F;
+    }
+
+    .figureForArticle{
+        float: right;
+    }
+
+    .figureForArticle figcaption {
+        margin-left: 20px;
+    }
+
+    .figureForArticle img {
+        width: 500px;
+        margin-top: 15px;
+        margin-left: 15px;
+        border: 1px solid #486D8F;
+        border-radius: 15px;
+    }
+
+    #asideHomepageFlex {
+        flex: 0 0 400px;
+        background-color: #EBD3C0;
+        padding-left: 60px;
+        padding-right: 20px;
+        font-size: 1.6em;
+        margin-right: 20px;
+        border-bottom-right-radius: 10px;
+        border-right: #486D8F 4px solid;
+        border-bottom: #486D8F 4px solid;
+    }
+    
+    #asideHomepageFlex li {
+        line-height: 35px;
+    }
+
+
+    
+/* -------------- Mobile Flex -------------- */
+@media screen and (max-width: 479px) {
+    
+    .logo {
+        display: none;
+    }
+
+    .cookieStatement {
+        margin-right: 10px;
+    }
+
+    .navListHamburgerMenu {
+        text-align: center;
+        position: absolute;
+        padding: 1rem;
+        top: 4rem;
+        right: 1rem;
+        list-style: none;
+        opacity: 0;
+        font-size: 2rem;
+        background-color: black;
+        border-radius: 0.25em;
+    }
+
+    .navListHamburgerMenu li{
+        padding: 0.5rem;
+    }
+    
+    .navListHamburgerMenu li a{
+        color: #FEDDC4;
+        text-decoration: none;
+    }
+    
+    .hamburgerMenu {
+        order: -1;
+        right: 1.7rem;
+        top: 2rem;
+        width: 25px;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        opacity: 0;
+    }
+    
+    .hamburgerMenu:hover {
+        cursor: pointer;
+    }
+
+    .hamburgerMenu:checked~.navListHamburgerMenu {
+        display: block;
+        opacity: 1;
+    }
+
+    .thisHamburgerMenuMobile {
+        height: 3rem;
+        width: 3rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        background-color: black;
+        border-radius: 0.25em;
+    }
+    
+    .thisHamburgerMenuMobile .line {
+        background-color: #FEDDC4;
+        border-radius: 1em;
+        width: 2rem;
+        height: 0.25rem;
+    }
+
+    
+    .navHomepageFlex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .navHomepageFlex > ul {
+        font-size: 1.5em;
+        text-transform: uppercase;
+    }
+
+    .navHomepageFlex li {
+        margin-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navHomepageFlex a:active {
+        color: #486D8F;
+    }
+
+    /* -------------- Mobile Flex (HOMEPAGE) -------------- */
+    .bodyParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+    .headerHomepageFlex {
+        order: -1;
+        flex: 0 0 80%;
+        margin-bottom: 0.5em;
+    }
+
+    .titleHomepage  {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 20px;
+        margin-top: 5px;
+        font-size: 1.9em;
+    }
+
+    #asideHomepageFlex {
+        order: -1;
+        margin-right: 10px;
+        margin-left: 10px;
+        padding-top: 10px;
+        font-size: 1.4em;
+        background-color: #EBD3C0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        text-align: left;
+        border-top: #486D8F 4px solid;
+        border-left: #486D8F 4px solid;
+        border-right: #486D8F 4px solid;
+    }
+    
+    #asideHomepageFlex ol {
+        padding-right: 30px;
+        padding-left: 50px;
+    }
+    
+    #asideHomepageFlex {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    #videoForPC, #videoForTablet {
+        display: none;
+    }
+    
+    article {
+        padding: 10px;
+        margin: 15px;
+    }
+    
+    #articlesHomepage {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #EBD3C0;
+        margin-left: 10px;
+        margin-right: 10px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-left: #486D8F 2px solid;
+        border-right: #486D8F 2px solid;
+        border-bottom: #486D8F 2px solid;
+    }
+    
+    #article1,
+    #article2,
+    #article3 {
+        font-size: 1.2em;
+        border-bottom: 2px solid #486D8F;
+    }
+
+    .figureForArticle img {
+        width: 80%;
+        margin-top: 15px;
+        margin-right: 15px;
+        border: 3px solid #486D8F;
+    }
+    
+    
+  }
+ }
