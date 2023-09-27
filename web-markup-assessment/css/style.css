@@ -232,7 +232,7 @@ footer {
     }
     
     #asideHomepageFlex li {
-        line-height: 35px;
+        line-height: 40px;
     }
 
 
@@ -257,7 +257,7 @@ footer {
         list-style: none;
         opacity: 0;
         font-size: 2rem;
-        background-color: black;
+        background-color: #0d0c0b;
         border-radius: 0.25em;
     }
 
@@ -266,7 +266,7 @@ footer {
     }
     
     .navListHamburgerMenu li a{
-        color: #FEDDC4;
+        color: #e6d2c2;
         text-decoration: none;
     }
     
@@ -301,7 +301,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        background-color: black;
+        background-color: #110e0c;
         border-radius: 0.25em;
     }
     
