@@ -19,9 +19,16 @@
 
 }
 
-.titleHomepage{
+.titleHomepage,
+.titleGrid {
     font-family: Notable;
     text-align: center;
+}
+
+.subtitleGrid{
+    padding: 15px;
+    font-size: 1.4em;
+    color: #406b94;
 }
 
 body{
@@ -244,6 +251,150 @@ footer {
         padding: 1.9rem;
     }
 
+    /* -------- Detail page 1 (Neighbourhood) - PC & Grid -------- */
+    .bodyGridContainer{
+        display:grid;
+    }
+
+    .headerGridNeighbourhood{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .navGridNeighbourhood {
+        /*display: grid;
+        justify-content: center;
+        text-transform: uppercase;
+        background: #EBD3C0; 
+        border-radius: 10px;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+        margin-top: 10px;*/
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        display: grid;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .navGridNeighbourhood > ul {
+        grid-template-columns: auto auto auto auto auto auto;
+        justify-content: center;
+        list-style-type: none;
+        display: grid;
+        font-size: 1.1em;
+        padding: 1rem;
+        text-transform: uppercase;
+        background: #EBD3C0;
+        border-radius: 10px;
+    }
+    
+    .navGridNeighbourhood li {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .navGridNeighbourhood a {
+        font-size: 1.2em; 
+        color: #486D8F;
+        text-decoration: solid;
+    }
+    
+    .navGridNeighbourhood a:hover {
+        color: #FFF0DE;
+    }
+    
+    .navGridNeighbourhood a:active {
+        color: #486D8F;
+    }
+    .articlesGridContainer {
+        display: grid;
+        grid-template-columns: 40% 35% auto;
+        grid-template-rows: auto;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        grid-template-areas: 
+            "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
+            "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
+            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood3"
+            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+            "articleNeighbourhood5 articleNeighbourhood6 articleNeighbourhood6";
+    }
+    .articlesGridContainer + article {
+        background-color: #FEDDC4;
+    }
+    
+    #articleNeighbourhood1 {
+        grid-area: articleNeighbourhood1;
+        place-self: center;
+    }
+    
+    #articleNeighbourhood2 {
+        grid-area: articleNeighbourhood2;
+    }
+    
+    #articleNeighbourhood3 {
+        grid-area: articleNeighbourhood3;
+        place-self: end;
+    }
+    
+    #articleNeighbourhood4 {
+        grid-area: articleNeighbourhood4;
+        place-self: end;
+    }
+
+    #articleNeighbourhood5 {
+        grid-area: articleNeighbourhood5;
+    }
+   
+    #articleNeighbourhood6 {
+        grid-area: articleNeighbourhood6;
+    }
+
+    
+    .articleNeighbourhood {
+        background-color: #FEDDC4;
+        border: #486D8F 1px solid;
+        border-radius: 10px;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    #asideGridNeighbourhood {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        justify-content: space-around;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: #486D8F 2px solid;
+        border-radius: 10px;
+    }
+
+    .asideGridContainerNeighbourhood {
+        display: grid;
+        grid-template-columns: 40% 35% auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .imageAsideNeighbourhood {
+        width: 400px;
+        height: 250px;
+        border: #486D8F 2px solid;
+        border-radius: 10px;
+
 
     
 /* -------------- Mobile Flex -------------- */
@@ -342,7 +493,10 @@ footer {
         color: #486D8F;
     }
 
-    /* -------------- Mobile Flex (HOMEPAGE) -------------- */
+    
+    }
+
+    /* -------------- Mobile Flexbox (HOMEPAGE) -------------- */
     .bodyParent {
         display: flex;
         flex-flow: row wrap;
