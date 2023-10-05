@@ -160,12 +160,7 @@ footer {
         margin-right: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px;
         justify-content: center;
-        border-left: #486D8F 4px solid;
-        border-top: #486D8F 4px solid;
-        border-right:#486D8F 4px solid;
     }
     
     #videoForPC {
@@ -183,7 +178,6 @@ footer {
     #articlesHomepageFlex
     {
         flex: 1 0 0px;
-        border-right: 4px solid #4a7095;
         margin-left: 20px;
     }
 
@@ -197,9 +191,6 @@ footer {
     #articlesHomepage {
         display: flex;
         flex-direction: column;
-        border-left: #486D8F 4px solid;
-        border-bottom: #486D8F 4px solid;
-        border-bottom-left-radius: 10px;
     }
 
     #article1,
@@ -231,9 +222,6 @@ footer {
         padding-left: 58px;
         font-size: 1.2em;
         margin-right: 20px;
-        border-right: #486D8F 4px solid;
-        border-bottom: #486D8F 4px solid;
-        border-bottom-right-radius: 12px;
     }
     
     #asideHomepageFlex li {
@@ -378,8 +366,6 @@ footer {
         margin-right: 20px;
         padding-top: 15px;
         padding-bottom: 15px;
-        border: #486D8F 2px solid;
-        border-radius: 10px;
     }
 
     .asideGridContainerNeighbourhood {
