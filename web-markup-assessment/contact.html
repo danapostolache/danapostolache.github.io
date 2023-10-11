@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="request, contact, parents, Haarlemmerhoutkwartier, life">
+    <meta name="description" content="Home page of the Haarlemmerhoutkwartier neighbourhood website">
+    <meta name="author" content="Dana Postolache">
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Contact</title>
+</head>
+
+<body class="bodyContactGrid">
+    <img class="logo" src="./img/logo.png" title=" Parents from Haarlemmwerkwartier" alt="logo">
+    
+    <!--Header-->
+    <header class="headerGridNeighbourhood">
+        <h1 class="titleGrid titleFont">Parents from Haarlemmerhoutkwartier</h1>
+        <h2 class="subtitleGrid subtitleFont">CONTACT US</h2>
+    </header>
+    
+    <!--Navigation-->
+    <nav class="navGridNeighbourhood">
+        <input class="hamburgerMenu" type="checkbox">
+        <ul class="navListHamburgerMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="detailPage1.html">Neighbourhood</a></li>
+            <li><a href="detailPage2.html">Education</a></li>
+            <li><a href="detailPage3.html">Activities</a></li>
+            <li><a href="detailPage4.html">Health</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+
+        <figure class="thisHamburgerMenuMobile">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+            <span class="line line4"></span>
+            <span class="line line5"></span>
+            <span class="line line6"></span>
+        </figure>
+    </nav>
+
+    <!--Contact-->
+    <section id="contactContainer">
+        <h2 class="headerArticles">Contact us</h2>
+        <form action="contact.html" method="post" id="contactForm">
+            <fieldset>
+                <legend>
+                    <strong>Personal information</strong>
+                </legend>
+                <ul>
+                    <li>
+                        <label for="title">Select your title*</label>
+                        <select name="title" id="title" required>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Neutral">Neutral</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="name">Name*</label>
+                        <input type="text" name="name" placeholder="Your name..." id="name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email address*</label>
+                        <input type="email" name="email" placeholder="email@info.com" id="email" required>
+                    </li>
+                    <li>
+                        <label for="phone">Phone number</label>
+                        <input type="tel" name="phone" placeholder="06-12345678" id="phone">
+                    </li>
+                    <li>
+                        <label for="website">Website address</label>
+                        <input type="url" name="website" placeholder="https://example.com" id="website">
+                    </li>
+                    <li>
+                        <label for="request">Request*</label>
+                        <textarea name="request" placeholder="Your request..." id="request" required></textarea>
+                    </li>
+                </ul>
+
+                <button type="submit" id="submit">Submit</button>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="footer">
+
+        <!--Copyright-->
+        <cite>
+            <em>&copy; 2023 Dana Postolache</em>
+        </cite>
+    
+        <!--Cookie statement-->
+        <section class="cookie">
+            <h4>Cookie Statement</h4>
+        </section>
+    </footer>
+
+</body>
+</html>

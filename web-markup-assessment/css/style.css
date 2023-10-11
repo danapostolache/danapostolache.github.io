@@ -41,7 +41,7 @@ body{
 
 #asideHomepageFlex + footer
  {
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 .cookie {
@@ -484,7 +484,259 @@ footer {
         border-radius: 6px;
     }
 
+    /* -------- CONTACT page - PC & Grid -------- */
+    .bodyContactGrid {
+        display: grid;
+    } 
+
+    #contactContainer{
+        display: grid;
+        grid-template-columns: 40% 30% auto;
+        justify-content: start;
+        grid-template-areas: 
+        "form form aside"; 
+        justify-content: center;
+        margin-left: 15px;
+        margin-top: 15px;
+        margin-right: 15px;
+        border-radius: 10px;
+    }
+
+    #contactForm {
+        grid-area: form;
+        place-self: center; 
+        width: 1000px;
+        font-size: 1.5em;
+    }
+
+    #contactForm li {
+        list-style-type:circle;
+        padding: 5px;
+        margin-left: 10px;
+        margin-bottom: 3px;
+        
+    }
+
+    #contactForm legend {
+        padding: 12px;
+        font-size: 1.4em;
+    }
+
+    #contactForm input {
+        vertical-align:middle;
+    }
+
+    #contactForm textarea {
+        height: 120px;
+        vertical-align: top;
+        resize: vertical;
+    }
+
+    #contactForm input,
+    #contactForm textarea,
+    #contactForm select {
+        background-color: #afd4f6;
+        width: 400px;
+        font-size: 0.8em;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 9px;
+    }
+
+    #contactForm button {        
+        background-color: #FEDDC4;
+        width: 500px;
+        margin-top: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 1.5em;
+        border: #6394bf 1px solid;
+        border-radius: 50px;
+    }
+
+    #contactForm button:hover {
+        color:#FEDDC4;
+        background-color: #486D8F;
+
+    }
+
 }
+
+/* -------------- Tablet Flex -------------- */
+@media screen and (min-width: 480px) and (max-width: 1279px) {
+    .cookie
+    {
+        margin-right: 18px;
+    }
+
+    /* -------- Homepage  -------- */
+
+    .bodyParent {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .logo {
+        order: -1;
+    }
+
+    .headerHomepageFlex {
+        order: -1;
+        flex: 1 0 100%;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .hamburgerMenu {
+        display: none;
+    }
+
+    .navHomepageFlex {
+        order: -1;
+        flex: 1 0 100%;
+        display: flex;
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .navHomepageFlex li {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .navHomepageFlex a {
+        color: #486D8F;
+        text-decoration: none;
+    }
+
+    .navHomepageFlex a:hover {
+        color:#FFF0DE;
+    }
+   
+    .navHomepageFlex a:active {
+        color: #486D8F;
+    }
+    
+    .navHomepageFlex > ul {
+        display: flex;
+        justify-content: center;
+        font-size: 1.4em;
+        background: #EBD3C0;
+        list-style-type: none;
+        text-transform: uppercase;
+        border-radius: 10px;
+        padding: 0.5rem;
+    }
+
+    #videoHomepageFlex{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 18px;
+        margin: auto;
+        padding-top: 18px;
+        border-radius: 10px;
+        background-color:#FEDDC4;
+        border: #486D8F 2px solid;
+    }
+    
+    #videoForPC {
+       display: none;
+    }
+
+    #videoForTablet {
+        width: 80%;
+        margin-bottom: 18px;
+        border: 2px solid #406b94;
+        border-radius: 8px;
+    }
+
+    .asideHomepageFlex {
+        order: -1;
+        padding-top: 8px;
+        padding-left: 30px;
+        padding-bottom: 18px;
+        padding-right: 18px;
+        border-radius: 10px;
+        margin-bottom: 18px;
+        font-size: 1.4em;
+        text-align: left;
+        margin: auto;
+        background-color:#FEDDC4;
+        border: #486D8F 2px solid;
+    }
+
+    #articlesHomepageFlex
+    { 
+        display: flex;
+        flex-direction: column;
+        background-color:#FEDDC4;
+        border: #486D8F 2px solid;
+        margin-left: 18px;
+        margin-right: 181px;
+        border-radius: 8px;
+    }
+
+    article {
+        padding: 12px;
+        margin: 12px;
+    }
+
+    #article1,
+    #article2,
+    #article3 {
+        font-size: 1.2em;
+        border-bottom: 4px solid #486D8F;
+    }
+    
+    #article1 {
+        order: 3;
+    }
+
+    #article2 {
+        order: 2;
+    }
+
+    #article3 {
+        order: 1;
+    }
+
+    .figureForArticle{
+        float: left;
+    }
+
+    .figureForArticle img {
+        width: 300px;
+        margin-top: 15px;
+        margin-left: 15px;
+        border: 1px solid #486D8F;
+        border-radius: 15px;
+    }
+
+    .moreInfoArticle {
+        float:left;
+    }
+    
+    .footerForArticle {
+        float: right;
+    }
+
+    .callToAction {
+        margin-top: 50px;
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        background: #EBD3C0; 
+        border-radius: 10px;
+        padding: 1.9rem;
+    }
+
+}
+
+
 
     
 /* -------------- Mobile Flex -------------- */
@@ -494,7 +746,7 @@ footer {
         display: none;
     }
 
-    .cookieStatement {
+    .cookie {
         margin-right: 10px;
     }
 
@@ -667,4 +919,4 @@ footer {
     
     
   }
- }
+ 
