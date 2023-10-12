@@ -406,7 +406,7 @@ footer {
 
     .imgArticleHealth img {
         width: 250px;
-        border: #486D8F 3px solid;
+        border: #FFC72B 3px solid;
         border-radius: 7px;
     }
 
@@ -426,12 +426,22 @@ footer {
         margin-left: 17px;
     }
 
+    #tableHealth th::first-letter {
+        color:#486D8F
+    }
+
     #tableHealth tr:nth-child(2n+0) {
         background-color: #FFF;
     }
     
     #tableHealth tr:nth-child(2n+1) {
-        background-color: #FEDDC4;
+        background-color: #CFF;
+    }
+
+    #tableHealth td:first-child,
+    #tablehealth th:first-child {
+        background-color: #FF0;
+        color: #000;
     }
 
     #tableHealth,
