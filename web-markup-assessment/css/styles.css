@@ -85,7 +85,7 @@ footer {
 }
 
  /* ------------- PC ------------- */
- @media screen and (min-width: 1280px) {
+ @media screen and (min-width: 769px) {
 
     .hamburgerMenu {
         display: none;
@@ -573,15 +573,15 @@ footer {
     }
 
 }
-
-/* -------------- Tablet Flex -------------- */
+ /*
+ -------------- Tablet Flex -------------- 
 @media screen and (min-width: 480px) and (max-width: 1279px) {
     .cookie
     {
         margin-right: 18px;
     }
 
-    /* -------- Homepage  -------- */
+     -------- Homepage  -------- 
 
     .bodyParent {
         display: flex;
@@ -721,7 +721,7 @@ footer {
         font-size: 1.2em;
     }
 
-    /* --- Detail pages 1,2,3 - Tablet --- */
+     --- Detail pages 1,2,3 - Tablet --- 
 
     .headerGridNeighbourhood {
         font-size: 1rem;
@@ -845,11 +845,16 @@ footer {
         margin-right: 7px;
         border-radius: 7px;
         border: #486D8F 2px solid;
-    }
+    }  
 
 }
+
+*/
+
+
+
 /* -------------- Mobile Flex -------------- */
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 768px) {
     
     .logo {
         display: none;
