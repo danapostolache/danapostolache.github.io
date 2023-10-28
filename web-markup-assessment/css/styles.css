@@ -303,13 +303,13 @@ footer {
         margin-bottom: 10px;
         border-radius: 10px;
         grid-template-areas: 
-            "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
-            "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
-            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood3"
-            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
-            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
-            "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
-            "articleNeighbourhood5 articleNeighbourhood6 articleNeighbourhood6";
+        "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
+        "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
+        "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood3"
+        "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+        "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+        "articleNeighbourhood5 articleNeighbourhood1 articleNeighbourhood4"
+        "articleNeighbourhood5 articleNeighbourhood6 articleNeighbourhood6";
     }
     .articlesGridContainer + article {
         background-color: #FEDDC4;
@@ -342,7 +342,6 @@ footer {
         grid-area: articleNeighbourhood6;
     }
 
-    
     .articleNeighbourhood {
         border-radius: 10px;
         font-size: 1.2em;
@@ -490,10 +489,10 @@ footer {
 
     #contactContainer{
         display: grid;
-        grid-template-columns: 40% 30% auto;
+        grid-template-columns: 60% auto;
         justify-content: start;
         grid-template-areas: 
-        "form form aside"; 
+        "form form"; 
         justify-content: center;
         margin-left: 15px;
         margin-top: 15px;
