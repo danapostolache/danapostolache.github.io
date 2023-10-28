@@ -11,10 +11,7 @@
 
 .logo{
     margin: auto;
-    width: 45%;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+    width: 35%;
 
 }
 
@@ -22,6 +19,7 @@
 .titleGrid {
     font-family: Notable;
     text-align: center;
+    font-size: 1.5em;
 }
 
 .subtitleGrid{
@@ -50,12 +48,7 @@ body{
     margin-right: 0px;
     margin-bottom: 8px;
     font-size: 1.1em;
-    color: #FFF;
-    background-color: #FA0;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-align: center;
+    color: #ffffffd6;
     position: fixed;
     border-radius: 13px;
     text-indent: 0px;
@@ -65,6 +58,11 @@ body{
     z-index: 9999;
     bottom: 0;
     right: 0;
+    background-color: #FA0;
+    letter-spacing: normal;
+    word-spacing: normal;
+    line-height: normal;
+    text-align: center;
 }
 
 .footer cite {
@@ -211,7 +209,6 @@ footer {
         width: 500px;
         margin-top: 15px;
         margin-left: 15px;
-        border-radius: 15px;
     }
 
     #asideHomepageFlex {
@@ -301,7 +298,6 @@ footer {
         margin-top: 10px;
         margin-right: 20px;
         margin-bottom: 10px;
-        border-radius: 10px;
         grid-template-areas: 
         "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
         "articleNeighbourhood2 articleNeighbourhood1 articleNeighbourhood3"
@@ -343,7 +339,6 @@ footer {
     }
 
     .articleNeighbourhood {
-        border-radius: 10px;
         font-size: 1.2em;
         text-align: center;
     }
@@ -369,7 +364,6 @@ footer {
     .imageAsideNeighbourhood {
         width: 400px;
         height: 250px;
-        border-radius: 10px;
     }
 
     /* -------- Detail page 4 (Health) - PC & Grid -------- */
@@ -395,8 +389,6 @@ footer {
 
     .imgArticleHealth img {
         width: 250px;
-        border: #FFC72B 3px solid;
-        border-radius: 7px;
     }
 
     .contentContainerTable{
@@ -479,7 +471,6 @@ footer {
         width: 400px;
         height: 250px;
         margin-bottom: 43px;
-        border-radius: 6px;
     }
 
     /* -------- CONTACT page - PC & Grid -------- */
@@ -494,10 +485,6 @@ footer {
         grid-template-areas: 
         "form form"; 
         justify-content: center;
-        margin-left: 15px;
-        margin-top: 15px;
-        margin-right: 15px;
-        border-radius: 10px;
     }
 
     #contactForm {
@@ -512,7 +499,6 @@ footer {
         padding: 5px;
         margin-left: 10px;
         margin-bottom: 3px;
-        
     }
 
     #contactForm legend {
@@ -562,284 +548,6 @@ footer {
     }
 
 }
- /* This was supposed to be the tablet version, but it was no longer needed.
-
-
- -------------- Tablet Flex -------------- 
-@media screen and (min-width: 480px) and (max-width: 1279px) {
-    .cookie
-    {
-        margin-right: 18px;
-    }
-
-     -------- Homepage  -------- 
-
-    .bodyParent {
-        display: flex;
-        flex-flow: row wrap;
-    }
-
-    .logo {
-        order: -1;
-    }
-
-    .headerHomepageFlex {
-        order: -1;
-        flex: 1 0 100%;
-        font-size: 0.8em;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .hamburgerMenu {
-        display: none;
-    }
-
-    .navHomepageFlex {
-        display: flex;
-        order: -1;
-        flex: 1 0 100%;
-        margin-bottom: 15px;
-        justify-content: center;
-    }
-
-    .navHomepageFlex li {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .navHomepageFlex a {
-        color: #486D8F;
-        text-decoration: none;
-    }
-
-    .navHomepageFlex a:hover {
-        color:#FFF0DE;
-    }
-   
-    .navHomepageFlex a:active {
-        color: #486D8F;
-    }
-    
-    .navHomepageFlex > ul {
-        display: flex;
-        justify-content: center;
-        font-size: 1.3em;
-        background: #EBD3C0;
-        list-style-type: none;
-        border-radius: 10px;
-        padding: 0.7rem;
-    }
-
-    #videoHomepageFlex{
-        order: -1;
-        display: flex;
-        justify-content: center;
-    }
-    
-    #videoForPC {
-       display: none;
-    }
-
-    #videoForTablet {
-        width: 89%;
-        border-radius: 4px;
-    }
-
-    #asideHomepageFlex {
-        order: 1;
-        padding-top: 8px;
-        padding-left: 30px;
-        padding-bottom: 18px;
-        padding-right: 18px;
-        border-radius: 10px;
-        margin-bottom: 18px;
-        font-size: 1em;
-        text-align: left;
-        margin: auto;
-    }
-
-    #articlesHomepageFlex
-    { 
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-        margin-right: 18px;
-    }
-
-    #article1,
-    #article2,
-    #article3,
-    #article4 {
-        font-size: 1em;
-        border-bottom: 2px solid #486D8F;
-    }
-
-    article {
-        padding: 25px;
-        margin: 24px;
-    }
-    
-    .figureForArticle{
-        float: left;
-    }
-
-    .figureForArticle img {
-        width: 300px;
-        margin-top: 15px;
-        margin-left: 4px;
-        border-radius: 10px;
-    }
-
-    .moreInfoArticle {
-        float:left;
-    }
-    
-    .footerForArticle {
-        float: right;
-    }
-    
-    .callToAction {
-        margin-top: 50px;
-        list-style-type: none;
-        display: flex;
-        justify-content: center;
-        text-transform: uppercase;
-        background: #EBD3C0; 
-        border-radius: 10px;
-        padding: 1.9rem;
-        font-size: 1.2em;
-    }
-
-     --- Detail pages 1,2,3 - Tablet --- 
-
-    .headerGridNeighbourhood {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .navGridNeighbourhood {
-        font-size: 1.3em;
-        margin-bottom: 10px;
-        margin-top: 10px;
-        display: grid;
-        justify-content: center;
-        padding: 15px;
-    }
-
-    .navGridNeighbourhood > ul {
-        background: #EBD3C0;
-        font-size: 1.3em;
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto;
-        border-radius: 10px;
-        padding: 0.7rem;
-    }
-
-    .navGridNeighbourhood li {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .navGridNeighbourhood a {
-        color: #486D8F;
-        text-decoration: none;
-    }
-   
-    .navGridNeighbourhood a:active {
-        color: #486D8F;
-    }
-
-    .navGridNeighbourhood a:hover {
-        color:#FFF0DE;
-    }
-
-    .bodyGridContainer {
-        display: grid;
-    }
-
-    .articlesGridContainer {
-        display: grid;
-        grid-template-columns: 45% 55%;
-        grid-template-rows: auto;
-        padding-left: 7px;
-        padding-right: 7px;
-        padding-top: 4px;
-        margin-bottom: 5px;
-        margin-left: 12px;
-        margin-right: 12px;
-        margin-bottom: 5px;
-        grid-template-areas: 
-        "articleNeighbourhood1 articleNeighbourhood2"
-        "articleNeighbourhood1 articleNeighbourhood2"
-        "articleNeighbourhood3 articleNeighbourhood2"
-        "articleNeighbourhood3 articleNeighbourhood5"
-        "articleNeighbourhood3 articleNeighbourhood5"
-        "articleNeighbourhood3 articleNeighbourhood5"
-        "articleNeighbourhood6 articleNeighbourhood6";
-    }
-
-    #articleNeighbourhood1 {
-        grid-area: articleNeighbourhood1;
-        place-self: start;
-    }
-
-    #articleNeighbourhood2 {
-        grid-area: articleNeighbourhood2;
-        place-self: end;
-    }
-
-    #articleNeighbourhood3 {
-        grid-area: articleNeighbourhood3;
-        place-self: center;
-    }
-
-    #articleNeighbourhood4 {
-        display: none;
-    }
-    #articleNeighbourhood5 {
-        grid-area: articleNeighbourhood5;
-        place-self: center;
-    }
-
-    #articleNeighbourhood6 {
-        grid-area: articleNeighbourhood6;
-    }
-    
-    .articleNeighbourhood {
-        border-radius: 10px;
-        font-size: 1.2em;
-        text-align: center;
-    }
-
-     #asideGridNeighbourhood {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        margin-left: 15px;
-        margin-right: 15px;
-        padding-left: 7px;
-        padding-top: 15px;
-        padding-right: 7px;
-        padding-bottom: 15px;
-        border-radius: 6px;
-        justify-content: space-between;
-    
-    }
-
-    .imageAsideNeighbourhood {
-        width: 280px;
-        height: 200px;
-        margin-left: 7px;
-        margin-right: 7px;
-        border-radius: 7px;
-    }  
-
-}
-
-*/
-
-
 
 /* -------------- Mobile Flex -------------- */
 @media screen and (max-width: 768px) {
@@ -1122,7 +830,6 @@ footer {
     .imageAsideNeighbourhood {
         height: 220px;
         width: 350px;
-        border-radius: 7px;
     }
 
     /* -------------- Mobile Flexbox (DETAIL PAGE 4: Health) -------------- */
@@ -1216,7 +923,6 @@ footer {
     .imgHealthAside {
         width: 350px;
         height: 210px;
-        border-radius: 8px;
     }
 
     #footerHealth {
@@ -1278,7 +984,6 @@ footer {
         width: 400px;
         font-size: 1.3em;
         background-color: #486D8F;
-        border-radius: 50px;
         margin-top: 20px;
         margin-left: 30px;
         margin-bottom: 20px;
