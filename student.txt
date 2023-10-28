@@ -1,5 +1,5 @@
 Student name: Postolache Dana Camelia	
 Student number: 692480
 Student class: IT 2B
-GitHub Repository: https://github.com/danapostolache/web-markup.git
-GitHub Pages URL:
+GitHub Repository: https://github.com/danapostolache/danapostolache.github.io
+GitHub Pages URL: https://danapostolache.github.io/
